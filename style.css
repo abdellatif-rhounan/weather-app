@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+  overflow: hidden;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+.app {
+  max-width: 400px;
+  width: 98%;
+  padding: 24px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.search-box .fa-location-dot {
+  position: absolute;
+  margin-left: 10px;
+  font-size: 25px;
+  color: #111;
+}
+
+.search-input {
+  flex: 1;
+  height: 45px;
+  margin-right: 10px;
+  padding: 10px 40px 10px 38px;
+  border-radius: 10px;
+  background: #ebfffc;
+  font-size: 17px;
+  color: #111;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 5px lightblue, 0 0 10px lightblue;
+}
+
+.search-box button {
+  position: absolute;
+  right: 13px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: none;
+  color: #777;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.search-box button:hover {
+  color: #111;
+}
+
+.search-box .fa-magnifying-glass {
+  position: relative;
+  top: 2px;
+  font-size: 18px;
+}
+
+.weather-box {
+  display: none;
+  text-align: center;
+}
+
+.weather-icon {
+  width: 170px;
+}
+
+.temperature {
+  margin-bottom: 8px;
+  line-height: 1;
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.location {
+  margin-bottom: 16px;
+  line-height: 1;
+  font-size: 35px;
+}
+
+.weather-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.humidity,
+.wind {
+  display: flex;
+  align-items: center;
+}
+
+.humidity>i,
+.wind>i {
+  font-size: 32px;
+  margin-right: 12px;
+}
+
+.text > span {
+  font-size: 20px;
+}
+
+.text > p {
+  font-size: 14px;
+}
+
+.error-box {
+  display: none;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.error-msg {
+  font-size: 18px;
+}
+
+.error-msg i {
+  vertical-align: middle;
+  font-size: 20px;
+  color: #df1111;
+}
